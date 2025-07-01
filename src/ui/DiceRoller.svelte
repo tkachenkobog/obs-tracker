@@ -29,7 +29,7 @@
 
 </script>
 
-<div>
+<div class="container">
     <h1 class="H1">Dice Roller V2024</h1>
     <br>
     <div class="Dice-Roller-Container">
@@ -58,6 +58,9 @@
 </div>
 
 <style>
+    .container{ 
+        display:flex;
+    }
     .H1 {
         margin-left: auto;
         margin-right: auto;
