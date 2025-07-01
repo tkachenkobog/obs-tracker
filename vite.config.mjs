@@ -35,8 +35,8 @@ export default defineConfig(() => {
                     ...builtins,
                 ],
             },
-            emptyOutDir: true,   // Очищаємо dist перед білдом
-            outDir: 'dist',      // Окрема папка для білда, не корінь
+            emptyOutDir: false,
+            outDir: '.'
         },
         root: '.',              // Корінь проекту (де manifest.json)
     }

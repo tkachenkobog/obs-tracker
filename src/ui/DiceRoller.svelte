@@ -30,31 +30,7 @@
 </script>
 
 <div class="container">
-    <h1 class="H1">Dice Roller V2024</h1>
-    <br>
-    <div class="Dice-Roller-Container">
-        <input
-            type="number"
-            bind:value={diceSides}
-        />
-        D
-        <input
-            type="number"
-            bind:value={numDice}
-        />
-        +
-        <input
-            type="number"
-            bind:value={modifier}
-        />
-    </div>
-    <br>
-    <div class="Dice-Roller-Result">
-        <span class="H4"> Result: {result} </span>
-        <button class="Dice-Roller-Button" on:click={()=> rollDice(numDice, diceSides, modifier)}>
-            Roll!
-        </button>
-    </div>
+    <h1> Hello world2</h1>
 </div>
 
 <style>
