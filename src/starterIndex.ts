@@ -1,5 +1,5 @@
 import { App, ItemView, Plugin, PluginSettingTab, Setting, WorkspaceLeaf } from 'obsidian';
-import DiceRoller from "./ui/DiceRoller.svelte";
+import rightSideBar from "./ui/rightSideBar.svelte";
 
 const VIEW_TYPE = "svelte-view";
 
@@ -12,7 +12,7 @@ const DEFAULT_SETTINGS: MyPluginSettings = {
 };
 
 class MySvelteView extends ItemView {
-    private component: DiceRoller | null = null;
+    private component: rightSideBar | null = null;
     
     constructor(leaf: WorkspaceLeaf) {
         super(leaf);
@@ -30,8 +30,9 @@ class MySvelteView extends ItemView {
         return "dice";
     }
     
+    // тут імортуєм компоненти 
     async onOpen(): Promise<void> {
-        this.component = new DiceRoller({ target: this.contentEl, props: {} });
+        this.component = new rightSideBar({ target: this.contentEl, props: {} });
     }
     
     async onClose(): Promise<void> {
