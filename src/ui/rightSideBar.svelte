@@ -2,7 +2,7 @@
 </script>
 
 <div class="container">
-    <h1> Hello world23</h1>
+    <h1> Hello world</h1>
 </div>
 
 <style>
