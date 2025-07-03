@@ -10,7 +10,6 @@
     "keywords": [],
     "author": "Quorafind",
     "devDependencies": {
-        "@sveltejs/vite-plugin-svelte": "^3.1.0",
         "@tsconfig/svelte": "^5.0.4",
         "@types/node": "^20.12.7",
         "@typescript-eslint/eslint-plugin": "6.21.0",
