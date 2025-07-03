@@ -307,13 +307,7 @@
 
 <style>
 
- :global(.day.selected) {
-    background: red !important;
-    color: white !important;
-}
-
-
-  :global(#calendar-container) {
+ #calendar-container {
     --color-background-heading: transparent;
     --color-background-day: transparent;
     --color-background-weeknum: transparent;
@@ -336,21 +330,21 @@
     user-select: none;
   }
 
-  :global(.calendar-header) {
+  .calendar-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 16px;
   }
 
-  :global(.nav) {
+  .nav {
     display: flex;
     align-items: center;
     gap: 12px;
   }
 
-  :global(.nav-button),
-  :global(.reset-button) {
+  .nav-button,
+  .reset-button {
     background: none;
     border: none;
     color: var(--color-arrow);
@@ -363,13 +357,13 @@
     transition: all 0.2s ease;
   }
 
-  :global(.nav-button:hover),
-  :global(.reset-button:hover) {
+  .nav-button:hover,
+  .reset-button:hover {
     background: var(--background-modifier-hover);
     color: var(--text-normal);
   }
 
-  :global(.title) {
+  .title {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -377,37 +371,37 @@
     font-size: 14px;
   }
 
-  :global(.month) {
+  .month {
     color: var(--color-text-title);
   }
 
-  :global(.year) {
+  .year {
     color: var(--text-muted);
     font-weight: 400;
   }
 
-  :global(.calendar) {
+  .calendar {
     display: flex;
     flex-direction: column;
     gap: 2px;
   }
 
-  :global(.calendar-weekdays) {
+  .calendar-weekdays {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 2px;
     margin-bottom: 4px;
   }
 
-  :global(.calendar-weekdays.with-weeknums) {
+  .calendar-weekdays.with-weeknums {
     grid-template-columns: 32px repeat(7, 1fr);
   }
 
-  :global(.weeknum-header) {
+  .weeknum-header {
     width: 32px;
   }
 
-  :global(.weekday) {
+  .weekday {
     text-align: center;
     font-size: 11px;
     color: var(--color-text-heading);
@@ -416,17 +410,17 @@
     background: var(--color-background-heading);
   }
 
-  :global(.week) {
+  .week {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 2px;
   }
 
-  :global(.week.with-weeknums) {
+  .week.with-weeknums {
     grid-template-columns: 32px repeat(7, 1fr);
   }
 
-  :global(.weeknum) {
+  .weeknum {
     background: var(--color-background-weeknum);
     border: none;
     color: var(--color-text-weeknum);
@@ -442,12 +436,12 @@
     height: 32px;
   }
 
-  :global(.weeknum:hover) {
+  .weeknum:hover {
     background: var(--background-modifier-hover);
     color: var(--text-normal);
   }
 
-  :global(.day) {
+  .day {
     background: var(--color-background-day);
     border: none;
     color: var(--color-text-day);
@@ -465,34 +459,34 @@
     min-height: 32px;
   }
 
-  :global(.day:hover) {
+  .day:hover {
     background: var(--background-modifier-hover);
   }
 
-  :global(.day.today) {
+  .day.today {
     color: var(--color-text-today);
     font-weight: 600;
   }
 
-  :global(.day.selected) {
+  .day.selected {
     background: var(--interactive-accent);
     color: var(--text-on-accent);
   }
 
-  :global(.day.adjacent-month) {
+  .day.adjacent-month {
     color: var(--text-faint);
   }
 
-  :global(.day.weekend) {
+  .day.weekend {
     background: var(--color-background-weekend);
   }
 
-  :global(.day-number) {
+  .day-number {
     font-size: 13px;
     line-height: 1;
   }
 
-  :global(.dots) {
+  .dots {
     display: flex;
     gap: 2px;
     flex-wrap: wrap;
@@ -500,27 +494,27 @@
     max-width: 100%;
   }
 
-  :global(.dot) {
+  .dot {
     width: 4px;
     height: 4px;
     border-radius: 50%;
     background: currentColor;
   }
 
-  :global(.dot.filled) {
+  .dot.filled {
     background: currentColor;
   }
 
-  :global(.dot.hollow) {
+  .dot.hollow {
     background: transparent;
     border: 1px solid currentColor;
   }
 
-  :global(.clickable-icon) {
+  .clickable-icon {
     cursor: pointer;
   }
 
-  :global(.clickable-icon:hover) {
+  .clickable-icon:hover {
     opacity: 0.8;
   }
 </style>
