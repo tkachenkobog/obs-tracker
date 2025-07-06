@@ -3,11 +3,10 @@
 
   const dispatch = createEventDispatcher();
 
-  export let selectedId: string | null = "smoking";
+  export let selectedId: string | null = "null";
   export let today = new Date();
   export let displayedMonth = new Date();
   export let selectedDates: Date[] = [];
-  export let onClickDay: ((date: Date, isMetaPressed: boolean) => void) | null = null;
 
   let currentMonth = displayedMonth.getMonth();
   let currentYear = displayedMonth.getFullYear();
@@ -137,9 +136,6 @@
     
     console.log('Всі селектовані дати:', selectedDates.map(d => d.toDateString()));
     
-    if (onClickDay) {
-      onClickDay(dayData.date, event.metaKey || event.ctrlKey);
-    }
     dispatch('click-day', { date: dayData.date, isMetaPressed: event.metaKey || event.ctrlKey });
   }
 </script>
